@@ -62,6 +62,30 @@ Open **http://localhost:5000** in your browser.
 
 Demo accounts (password = username): `admin`, `counselor`, `researcher`, `student1`, `student2`
 
+### Run with Podman or Docker
+
+The `Containerfile` uses the OCI container format and works with both Podman and Docker.
+
+```bash
+# Build the image
+podman build -t xai-digital-twin -f Containerfile .
+# Docker users can use the same command with `docker` instead of `podman`
+
+# Run the dashboard
+podman run --rm --name xai-digital-twin -p 5000:5000 \
+     -v "$(pwd)/data:/app/data" \
+     xai-digital-twin
+```
+
+For Docker, replace `podman` with `docker` in both commands. The `data/` mount keeps CRUD changes, users, and counselor/student records after the container stops. Open **http://localhost:5000** after the container starts.
+
+Compose-compatible tools can use the included `compose.yaml`:
+
+```bash
+podman compose up --build
+# or: docker compose up --build
+```
+
 ---
 
 ## System Architecture

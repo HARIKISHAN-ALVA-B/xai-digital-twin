@@ -1,0 +1,11 @@
+services:
+  xai-digital-twin:
+    build:
+      context: .
+      dockerfile: Containerfile
+    image: xai-digital-twin:latest
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
