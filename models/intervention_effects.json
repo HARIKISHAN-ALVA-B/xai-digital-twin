@@ -1,0 +1,44 @@
+{
+  "effects": {
+    "none": {
+      "grade_delta": -0.0848,
+      "approved_delta": -0.0382,
+      "stress_delta": 0.0097,
+      "eval_delta": 0.0,
+      "tuition_paid_delta": 0.0
+    },
+    "mentoring": {
+      "grade_delta": 0.18,
+      "approved_delta": 0.12,
+      "stress_delta": -0.04,
+      "eval_delta": 0.1,
+      "tuition_paid_delta": 0.0
+    },
+    "financial_aid": {
+      "grade_delta": 0.02,
+      "approved_delta": 0.01,
+      "stress_delta": -0.2,
+      "eval_delta": 0.01,
+      "tuition_paid_delta": 0.2
+    }
+  },
+  "data_summary": {
+    "graduate_avg": {
+      "grade_change": 0.0536,
+      "approved_change": -0.0552,
+      "stress": 0.993,
+      "sem2_grade": 12.6973
+    },
+    "dropout_avg": {
+      "grade_change": -1.3573,
+      "approved_change": -0.6115,
+      "stress": 4.0859,
+      "sem2_grade": 5.8993
+    },
+    "gaps": {
+      "grade_gap": 1.4109,
+      "approved_gap": 0.5563,
+      "stress_gap": 3.0929
+    }
+  }
+}

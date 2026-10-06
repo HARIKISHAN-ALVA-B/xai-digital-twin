@@ -1,0 +1,38 @@
+{
+  "admin": {
+    "password_hash": "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918",
+    "role": "admin",
+    "name": "System Admin",
+    "student_id": null
+  },
+  "counselor": {
+    "password_hash": "1a8c1d77579d8c6d127aac0ae07691f224577b70510f5e2912d6bcf82e78b432",
+    "role": "counselor",
+    "name": "Dr. Smith",
+    "student_id": null
+  },
+  "researcher": {
+    "password_hash": "3588bb7219b1faa3d01f132a0c60a394258ccc3049d8e4a243b737e62524d147",
+    "role": "researcher",
+    "name": "Researcher",
+    "student_id": null
+  },
+  "student1": {
+    "password_hash": "509e87a6c45ee0a3c657bf946dd6dc43d7e5502143be195280f279002e70f7d9",
+    "role": "student",
+    "name": "Student Demo",
+    "student_id": "STU0001"
+  },
+  "student2": {
+    "password_hash": "eb4b3111401df980f14f28ad6804ae096df1e1c6963c51eab4140be226f8c94c",
+    "role": "student",
+    "name": "High Risk Student",
+    "student_id": "STU0100"
+  },
+  "student3": {
+    "password_hash": "373b29d2837e83b9ca5cec712a5985843df271cc7c06e64629472f4d03c6f83c",
+    "role": "student",
+    "name": "Another Student",
+    "student_id": "STU2000"
+  }
+}

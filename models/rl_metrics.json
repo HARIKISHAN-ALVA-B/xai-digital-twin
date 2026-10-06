@@ -1,0 +1,58 @@
+{
+  "B1_no_action": {
+    "policy": "B1_no_action",
+    "mean_initial_risk": 0.48026108760386704,
+    "mean_final_risk": 0.5013112033720245,
+    "mean_risk_reduction": -0.02105011576815741,
+    "retention_rate": 0.51,
+    "mean_return": 12.186621907518129,
+    "std_return": 11.669592536783002,
+    "action_distribution": {
+      "none": 2400,
+      "mentoring": 0,
+      "financial_aid": 0
+    }
+  },
+  "B0_random": {
+    "policy": "B0_random",
+    "mean_initial_risk": 0.48026108760386704,
+    "mean_final_risk": 0.4115589181438554,
+    "mean_risk_reduction": 0.06870216946001165,
+    "retention_rate": 0.58,
+    "mean_return": 10.636194750200492,
+    "std_return": 11.37711874208459,
+    "action_distribution": {
+      "none": 802,
+      "mentoring": 808,
+      "financial_aid": 790
+    }
+  },
+  "B2_gpa_rule": {
+    "policy": "B2_gpa_rule",
+    "mean_initial_risk": 0.48026108760386704,
+    "mean_final_risk": 0.4690458675476839,
+    "mean_risk_reduction": 0.01121522005618317,
+    "retention_rate": 0.545,
+    "mean_return": 11.896907760546428,
+    "std_return": 12.322010090284246,
+    "action_distribution": {
+      "none": 1732,
+      "mentoring": 608,
+      "financial_aid": 60
+    }
+  },
+  "RL_FQI": {
+    "policy": "RL_FQI",
+    "mean_initial_risk": 0.48026108760386704,
+    "mean_final_risk": 0.36141563018813033,
+    "mean_risk_reduction": 0.11884545741573675,
+    "retention_rate": 0.695,
+    "mean_return": 14.24131027139805,
+    "std_return": 11.364661721177436,
+    "action_distribution": {
+      "none": 1561,
+      "mentoring": 516,
+      "financial_aid": 323
+    }
+  }
+}

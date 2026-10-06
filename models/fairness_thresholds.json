@@ -1,0 +1,86 @@
+{
+  "stage1": {
+    "gender": {
+      "0": {
+        "threshold": 0.65,
+        "f1": 0.7692
+      },
+      "1": {
+        "threshold": 0.4,
+        "f1": 0.8239
+      }
+    },
+    "international": {
+      "0": {
+        "threshold": 0.55,
+        "f1": 0.7932
+      },
+      "1": {
+        "threshold": 0.75,
+        "f1": 0.875
+      }
+    },
+    "displaced": {
+      "0": {
+        "threshold": 0.65,
+        "f1": 0.8529
+      },
+      "1": {
+        "threshold": 0.55,
+        "f1": 0.7266
+      }
+    },
+    "scholarship": {
+      "0": {
+        "threshold": 0.55,
+        "f1": 0.8105
+      },
+      "1": {
+        "threshold": 0.55,
+        "f1": 0.5882
+      }
+    }
+  },
+  "stage2": {
+    "gender": {
+      "0": {
+        "threshold": 0.4,
+        "f1": 0.8169
+      },
+      "1": {
+        "threshold": 0.35,
+        "f1": 0.8479
+      }
+    },
+    "international": {
+      "0": {
+        "threshold": 0.35,
+        "f1": 0.827
+      },
+      "1": {
+        "threshold": 0.4,
+        "f1": 0.9412
+      }
+    },
+    "displaced": {
+      "0": {
+        "threshold": 0.6,
+        "f1": 0.8826
+      },
+      "1": {
+        "threshold": 0.35,
+        "f1": 0.7905
+      }
+    },
+    "scholarship": {
+      "0": {
+        "threshold": 0.35,
+        "f1": 0.8507
+      },
+      "1": {
+        "threshold": 0.35,
+        "f1": 0.6333
+      }
+    }
+  }
+}

@@ -1,0 +1,426 @@
+{
+  "summary": {
+    "n_eval": 300,
+    "horizon_weeks": 12,
+    "rl_mean_risk_reduction": 0.09592750521745377,
+    "rl_retention_rate": 0.66
+  },
+  "statistical_tests": {
+    "B1_no_action_risk_reduction": {
+      "comparison": "RL vs B1_no_action (RR)",
+      "n": 300,
+      "rl_mean": 0.09592750521745377,
+      "baseline_mean": -0.022211301691713745,
+      "difference_mean": 0.11813880690916752,
+      "difference_std": 0.22939865742090443,
+      "t_stat": 8.919948277500277,
+      "t_pvalue": 4.7637408484071026e-17,
+      "wilcoxon_stat": 1208.0,
+      "wilcoxon_pvalue": 7.241706997631514e-20,
+      "cohens_d": 0.5149934539172324,
+      "significant_at_0.01": true,
+      "significant_at_0.05": true,
+      "effect_size_label": "medium"
+    },
+    "B1_no_action_retention": {
+      "comparison": "RL vs B1_no_action (retention)",
+      "n": 300,
+      "rl_mean": 0.66,
+      "baseline_mean": 0.5033333333333333,
+      "difference_mean": 0.15666666666666668,
+      "difference_std": 0.37316627095010196,
+      "t_stat": 7.2716814900832345,
+      "t_pvalue": 3.124884241407305e-12,
+      "wilcoxon_stat": 25.0,
+      "wilcoxon_pvalue": 1.8898968170348683e-11,
+      "cohens_d": 0.4198307265760774,
+      "significant_at_0.01": true,
+      "significant_at_0.05": true,
+      "effect_size_label": "small"
+    },
+    "B0_random_risk_reduction": {
+      "comparison": "RL vs B0_random (RR)",
+      "n": 300,
+      "rl_mean": 0.09592750521745377,
+      "baseline_mean": 0.06342978189107575,
+      "difference_mean": 0.032497723326378035,
+      "difference_std": 0.17575509852266474,
+      "t_stat": 3.202621625474174,
+      "t_pvalue": 0.0015086813793204785,
+      "wilcoxon_stat": 18013.0,
+      "wilcoxon_pvalue": 0.03092574741187711,
+      "cohens_d": 0.18490344575800313,
+      "significant_at_0.01": true,
+      "significant_at_0.05": true,
+      "effect_size_label": "negligible"
+    },
+    "B0_random_retention": {
+      "comparison": "RL vs B0_random (retention)",
+      "n": 300,
+      "rl_mean": 0.66,
+      "baseline_mean": 0.5766666666666667,
+      "difference_mean": 0.08333333333333333,
+      "difference_std": 0.30003715860545616,
+      "t_stat": 4.810656385638151,
+      "t_pvalue": 2.3892480972209234e-06,
+      "wilcoxon_stat": 30.0,
+      "wilcoxon_pvalue": 3.4441291566632375e-06,
+      "cohens_d": 0.2777433759226979,
+      "significant_at_0.01": true,
+      "significant_at_0.05": true,
+      "effect_size_label": "small"
+    },
+    "B2_gpa_rule_risk_reduction": {
+      "comparison": "RL vs B2_gpa_rule (RR)",
+      "n": 300,
+      "rl_mean": 0.09592750521745377,
+      "baseline_mean": 0.011830187956608522,
+      "difference_mean": 0.08409731726084525,
+      "difference_std": 0.23686056703467723,
+      "t_stat": 6.149644413149523,
+      "t_pvalue": 2.483511159773001e-09,
+      "wilcoxon_stat": 9017.0,
+      "wilcoxon_pvalue": 2.4175821228352975e-05,
+      "cohens_d": 0.35504988573523555,
+      "significant_at_0.01": true,
+      "significant_at_0.05": true,
+      "effect_size_label": "small"
+    },
+    "B2_gpa_rule_retention": {
+      "comparison": "RL vs B2_gpa_rule (retention)",
+      "n": 300,
+      "rl_mean": 0.66,
+      "baseline_mean": 0.5433333333333333,
+      "difference_mean": 0.11666666666666667,
+      "difference_std": 0.36077150082600723,
+      "t_stat": 5.601124084183816,
+      "t_pvalue": 4.829508172988238e-08,
+      "wilcoxon_stat": 88.0,
+      "wilcoxon_pvalue": 9.426290530279906e-08,
+      "cohens_d": 0.32338104977680215,
+      "significant_at_0.01": true,
+      "significant_at_0.05": true,
+      "effect_size_label": "small"
+    }
+  },
+  "bootstrap_cis": {
+    "B1_no_action": {
+      "risk_reduction_mean": -0.022211301691713745,
+      "ci_95": [
+        -0.034991291269635745,
+        -0.008691315857698407
+      ]
+    },
+    "B0_random": {
+      "risk_reduction_mean": 0.06342978189107575,
+      "ci_95": [
+        0.04500235664506424,
+        0.08375934218252465
+      ]
+    },
+    "B2_gpa_rule": {
+      "risk_reduction_mean": 0.011830187956608522,
+      "ci_95": [
+        -0.007536662219679176,
+        0.03108868274586469
+      ]
+    },
+    "RL_FQI": {
+      "risk_reduction_mean": 0.09592750521745377,
+      "ci_95": [
+        0.06963391338129198,
+        0.12299581812626276
+      ]
+    }
+  },
+  "reward_ablation": {
+    "full_reward": {
+      "mean_risk_reduction": 0.08533184465176115,
+      "retention_rate": 0.6433333333333333
+    },
+    "w_risk": {
+      "mean_risk_reduction": 0.03973948273633141,
+      "retention_rate": 0.56,
+      "degradation_rr": 0.04559236191542974,
+      "degradation_retention": 0.08333333333333326
+    },
+    "w_retention": {
+      "mean_risk_reduction": 0.06096495282894466,
+      "retention_rate": 0.6,
+      "degradation_rr": 0.02436689182281649,
+      "degradation_retention": 0.043333333333333335
+    },
+    "w_cost": {
+      "mean_risk_reduction": 0.12057901073858375,
+      "retention_rate": 0.6566666666666666,
+      "degradation_rr": -0.0352471660868226,
+      "degradation_retention": -0.013333333333333308
+    },
+    "w_instability": {
+      "mean_risk_reduction": 0.08775192484938694,
+      "retention_rate": 0.63,
+      "degradation_rr": -0.0024200801976257957,
+      "degradation_retention": 0.013333333333333308
+    }
+  },
+  "robustness": {
+    "sigma_0.0": {
+      "noise_std": 0.0,
+      "mean_risk_reduction": 0.09592750521745377,
+      "risk_reduction_std": 0.2366517521884596,
+      "retention_rate": 0.66
+    },
+    "sigma_0.02": {
+      "noise_std": 0.02,
+      "mean_risk_reduction": 0.09366168502275832,
+      "risk_reduction_std": 0.23461604190590687,
+      "retention_rate": 0.656
+    },
+    "sigma_0.05": {
+      "noise_std": 0.05,
+      "mean_risk_reduction": 0.09346462362960059,
+      "risk_reduction_std": 0.23520011661003057,
+      "retention_rate": 0.6566666666666666
+    },
+    "sigma_0.1": {
+      "noise_std": 0.1,
+      "mean_risk_reduction": 0.09136298632311324,
+      "risk_reduction_std": 0.2312298568929678,
+      "retention_rate": 0.652
+    }
+  },
+  "fairness": {
+    "gender": {
+      "groups": {
+        "female": {
+          "n": 193,
+          "mean_initial_risk": 0.4125430405747937,
+          "mean_final_risk": 0.3212472393163576,
+          "mean_risk_reduction": 0.09129580125843605,
+          "retention_rate": 0.7305699481865285,
+          "mean_interventions_per_student": 3.139896373056995
+        },
+        "male": {
+          "n": 107,
+          "mean_initial_risk": 0.6212325107576064,
+          "mean_final_risk": 0.5169506236327656,
+          "mean_risk_reduction": 0.1042818871248409,
+          "retention_rate": 0.5327102803738317,
+          "mean_interventions_per_student": 4.429906542056075
+        }
+      },
+      "gaps": {
+        "risk_reduction_gap": 0.012986085866404859,
+        "retention_gap": 0.19785966781269682,
+        "intervention_allocation_gap": 1.2900101689990797,
+        "verdict": "concerning"
+      }
+    },
+    "international": {
+      "groups": {
+        "domestic": {
+          "n": 297,
+          "mean_initial_risk": 0.4882529329662196,
+          "mean_final_risk": 0.3926297109489806,
+          "mean_risk_reduction": 0.09562322201723898,
+          "retention_rate": 0.6599326599326599,
+          "mean_interventions_per_student": 3.589225589225589
+        },
+        "international": {
+          "n": 3,
+          "mean_initial_risk": 0.3605214636772871,
+          "mean_final_risk": 0.23446992163856825,
+          "mean_risk_reduction": 0.12605154203871885,
+          "retention_rate": 0.6666666666666666,
+          "mean_interventions_per_student": 4.666666666666667
+        }
+      },
+      "gaps": {
+        "risk_reduction_gap": 0.030428320021479868,
+        "retention_gap": 0.006734006734006703,
+        "intervention_allocation_gap": 1.0774410774410779,
+        "verdict": "fair"
+      }
+    },
+    "displaced": {
+      "groups": {
+        "not_displaced": {
+          "n": 145,
+          "mean_initial_risk": 0.5407625745227239,
+          "mean_final_risk": 0.44177727134906336,
+          "mean_risk_reduction": 0.0989853031736606,
+          "retention_rate": 0.6,
+          "mean_interventions_per_student": 3.668965517241379
+        },
+        "displaced": {
+          "n": 155,
+          "mean_initial_risk": 0.43665878823357485,
+          "mean_final_risk": 0.34359180368483067,
+          "mean_risk_reduction": 0.09306698454874418,
+          "retention_rate": 0.7161290322580646,
+          "mean_interventions_per_student": 3.535483870967742
+        }
+      },
+      "gaps": {
+        "risk_reduction_gap": 0.005918318624916416,
+        "retention_gap": 0.11612903225806459,
+        "intervention_allocation_gap": 0.133481646273637,
+        "verdict": "concerning"
+      }
+    },
+    "scholarship": {
+      "groups": {
+        "no_scholarship": {
+          "n": 236,
+          "mean_initial_risk": 0.5609584190355914,
+          "mean_final_risk": 0.4561690542120802,
+          "mean_risk_reduction": 0.10478936482351116,
+          "retention_rate": 0.597457627118644,
+          "mean_interventions_per_student": 4.0423728813559325
+        },
+        "scholarship": {
+          "n": 64,
+          "mean_initial_risk": 0.21416404046249227,
+          "mean_final_risk": 0.15091464254237508,
+          "mean_risk_reduction": 0.06324939792011719,
+          "retention_rate": 0.890625,
+          "mean_interventions_per_student": 1.96875
+        }
+      },
+      "gaps": {
+        "risk_reduction_gap": 0.04153996690339397,
+        "retention_gap": 0.29316737288135597,
+        "intervention_allocation_gap": 2.0736228813559325,
+        "verdict": "concerning"
+      }
+    },
+    "overall": {
+      "n_protected_groups": 4,
+      "fair_groups": 1,
+      "concerning_groups": 3,
+      "max_gap": 0.04153996690339397
+    }
+  },
+  "equal_opportunity": {
+    "gender": {
+      "group_retention": {
+        "female": {
+          "n_at_risk": 80,
+          "mean_interventions": 5.95,
+          "retention_rate": 0.35
+        },
+        "male": {
+          "n_at_risk": 67,
+          "mean_interventions": 5.925373134328358,
+          "retention_rate": 0.2537313432835821
+        }
+      },
+      "equal_opportunity_gap": 0.09626865671641788
+    },
+    "international": {
+      "group_retention": {
+        "domestic": {
+          "n_at_risk": 146,
+          "mean_interventions": 5.897260273972603,
+          "retention_rate": 0.3082191780821918
+        },
+        "international": {
+          "n_at_risk": 1,
+          "mean_interventions": 12.0,
+          "retention_rate": 0.0
+        }
+      },
+      "equal_opportunity_gap": 0.3082191780821918
+    },
+    "displaced": {
+      "group_retention": {
+        "not_displaced": {
+          "n_at_risk": 79,
+          "mean_interventions": 5.493670886075949,
+          "retention_rate": 0.26582278481012656
+        },
+        "displaced": {
+          "n_at_risk": 68,
+          "mean_interventions": 6.455882352941177,
+          "retention_rate": 0.35294117647058826
+        }
+      },
+      "equal_opportunity_gap": 0.0871183916604617
+    },
+    "scholarship": {
+      "group_retention": {
+        "no_scholarship": {
+          "n_at_risk": 134,
+          "mean_interventions": 5.850746268656716,
+          "retention_rate": 0.291044776119403
+        },
+        "scholarship": {
+          "n_at_risk": 13,
+          "mean_interventions": 6.846153846153846,
+          "retention_rate": 0.46153846153846156
+        }
+      },
+      "equal_opportunity_gap": 0.17049368541905857
+    }
+  },
+  "causal_ate": {
+    "baseline_outcome_rate": 0.3212025316455696,
+    "confounders_used": [
+      "Age at enrollment",
+      "Gender",
+      "Marital status",
+      "Debtor",
+      "Displaced",
+      "International",
+      "Mother's qualification",
+      "Father's qualification",
+      "Application mode",
+      "Previous qualification",
+      "Course",
+      "Curricular units 1st sem (enrolled)",
+      "Curricular units 1st sem (grade)"
+    ],
+    "sample_size": 4424,
+    "interventions": {
+      "financial_aid": {
+        "description": "Students with scholarship or fully paid tuition receive effective financial support",
+        "n_treated": 3942,
+        "n_control": 482,
+        "ate_naive": -0.6384,
+        "ate_ipw": -0.5121,
+        "ess": 880.9,
+        "ate_dr": -0.4737,
+        "dr_std_error": 0.0105,
+        "ci_95": [
+          -0.4942,
+          -0.4532
+        ],
+        "naive_minus_dr_bias": 0.1647,
+        "e_value": 4.39,
+        "direction": "reduces_risk"
+      },
+      "mentoring": {
+        "description": "Students with above-median Sem 1 approval rate who improved in Sem 2 received effective mentoring",
+        "n_treated": 1386,
+        "n_control": 3038,
+        "ate_naive": -0.2461,
+        "ate_ipw": -0.1921,
+        "ess": 3809.9,
+        "ate_dr": -0.1663,
+        "dr_std_error": 0.0106,
+        "ci_95": [
+          -0.1871,
+          -0.1456
+        ],
+        "naive_minus_dr_bias": 0.0797,
+        "e_value": 2.4,
+        "direction": "reduces_risk"
+      }
+    }
+  },
+  "causal_reward_multipliers": {
+    "none": 1.0,
+    "financial_aid": 0.7420112781954887,
+    "mentoring": 0.6757415684681024
+  }
+}

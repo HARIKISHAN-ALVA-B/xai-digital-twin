@@ -1,0 +1,40 @@
+{
+  "messages": [
+    {
+      "id": "70e27a46",
+      "student_id": "STU0001",
+      "from": "Dr. Smith",
+      "text": "Be sure you attend the meeting.",
+      "timestamp": "2026-06-30T22:25:26",
+      "read": true
+    },
+    {
+      "id": "1eec9d31",
+      "student_id": "STU0000",
+      "from": "Dr. Smith",
+      "text": "hyy",
+      "timestamp": "2026-08-08T15:56:31",
+      "read": false
+    },
+    {
+      "id": "1efdb653",
+      "student_id": "STU0001",
+      "from": "Dr. Smith",
+      "text": "hyyy",
+      "timestamp": "2026-08-08T15:58:04",
+      "read": true
+    }
+  ],
+  "meetings": [
+    {
+      "id": "b8d620db",
+      "student_id": "STU0001",
+      "counselor": "Dr. Smith",
+      "date": "2026-07-01",
+      "time": "03:30",
+      "reason": "Monthly update",
+      "timestamp": "2026-06-30T22:25:02"
+    }
+  ],
+  "notes": []
+}

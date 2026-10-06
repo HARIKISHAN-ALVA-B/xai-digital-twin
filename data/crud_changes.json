@@ -1,0 +1,69 @@
+{
+  "added": [
+    {
+      "student_id": "STU33333",
+      "data": {
+        "Marital status": 1,
+        "Age at enrollment": 20,
+        "Gender": 1,
+        "Displaced": 0,
+        "International": 0,
+        "Nacionality": 2,
+        "Debtor": 0,
+        "Tuition fees up to date": 1,
+        "Scholarship holder": 0,
+        "Mother's qualification": 1,
+        "Father's qualification": 1,
+        "Mother's occupation": 0,
+        "Father's occupation": 1,
+        "Application mode": 1,
+        "Application order": 1,
+        "Course": 9147,
+        "Daytime/evening attendance": 1,
+        "Previous qualification": 1,
+        "Curricular units 1st sem (credited)": 4,
+        "Curricular units 1st sem (enrolled)": 6,
+        "Curricular units 1st sem (evaluations)": 6,
+        "Curricular units 1st sem (approved)": 5,
+        "Curricular units 1st sem (grade)": 12,
+        "Curricular units 1st sem (without evaluations)": 0,
+        "Curricular units 2nd sem (credited)": 0,
+        "Curricular units 2nd sem (enrolled)": 6,
+        "Curricular units 2nd sem (evaluations)": 6,
+        "Curricular units 2nd sem (approved)": 4,
+        "Curricular units 2nd sem (grade)": 11,
+        "Curricular units 2nd sem (without evaluations)": 0,
+        "Unemployment rate": 10.8,
+        "Inflation rate": 1.4,
+        "GDP": 1.74,
+        "Approval_rate_sem1": 0.8333333333333334,
+        "Failure_rate_sem1": 0.16666666666666663,
+        "Stress_indicator": 0.58,
+        "Approval_rate_sem2": 0.6666666666666666,
+        "Failure_rate_sem2": 0.33333333333333337,
+        "Grade_change": -1,
+        "Approved_change": -1
+      }
+    }
+  ],
+  "deleted": [],
+  "updated": [
+    {
+      "student_id": "STU0000",
+      "data": {
+        "Curricular units 1st sem (credited)": 0,
+        "Curricular units 1st sem (enrolled)": 7,
+        "Curricular units 1st sem (evaluations)": 0,
+        "Curricular units 1st sem (approved)": 0,
+        "Curricular units 1st sem (grade)": 0,
+        "Curricular units 1st sem (without evaluations)": 0,
+        "Curricular units 2nd sem (credited)": 0,
+        "Curricular units 2nd sem (enrolled)": 6,
+        "Curricular units 2nd sem (evaluations)": 6,
+        "Curricular units 2nd sem (approved)": 4,
+        "Curricular units 2nd sem (grade)": 11,
+        "Curricular units 2nd sem (without evaluations)": 0
+      }
+    }
+  ]
+}
